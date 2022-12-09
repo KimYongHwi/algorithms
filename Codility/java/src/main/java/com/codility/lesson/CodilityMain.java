@@ -4,6 +4,8 @@ import com.codility.lesson.array.CyclicRotation;
 import com.codility.lesson.array.OddOccurrencesInArray;
 import com.codility.lesson.iterations.BinaryGap;
 import com.codility.lesson.timecomplexity.FrogJmp;
+import com.codility.lesson.timecomplexity.PermMissingElem;
+import com.codility.lesson.timecomplexity.TapeEquilibrium;
 
 public class CodilityMain {
     public void binaryGap() {
@@ -25,7 +27,7 @@ public class CodilityMain {
         cyclicRotation.solution(new int[]{3, 8, 9, 7, 6, 5}, 3);
         cyclicRotation.solution(new int[]{1, 2, 3, 4}, 4); // K == N
         cyclicRotation.solution(new int[]{1}, 4);
-        cyclicRotation.solution(new int[]{1,2,3,4,5,6,7}, 2);
+        cyclicRotation.solution(new int[]{1, 2, 3, 4, 5, 6, 7}, 2);
     }
 
     public void oddOccurrencesInArray() {
@@ -41,11 +43,32 @@ public class CodilityMain {
         FrogJmp f = new FrogJmp();
         f.solution(x, y, d);
     }
+
+    public void permMissingElem() {
+        PermMissingElem p = new PermMissingElem();
+        System.out.println(p.solution(new int[]{1}));
+        System.out.println(p.solution(new int[]{2, 3}));
+        System.out.println(p.solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+        System.out.println(p.solution(new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10}));
+    }
+
+    public void tapeEquilibrium() {
+        TapeEquilibrium t = new TapeEquilibrium();
+        System.out.println(t.solution(new int[]{1, 2}));
+        System.out.println(t.solution(new int[]{2, 3}));
+        System.out.println(t.solution(new int[]{2, 3, 9}));
+        System.out.println(t.solution(new int[]{3, 1, 2, 4, 3}));
+        System.out.println(t.solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+        System.out.println(t.solution(new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10}));
+    }
+
     public static void main(String[] args) {
         CodilityMain c = new CodilityMain();
 //        c.binaryGap();
 //        c.cyclicRotation();
 //        c.oddOccurrencesInArray();
-        c.frogJmp();
+//        c.frogJmp();
+//        c.permMissingElem();
+        c.tapeEquilibrium();
     }
 }
