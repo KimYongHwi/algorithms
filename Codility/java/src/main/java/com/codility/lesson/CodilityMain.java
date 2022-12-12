@@ -2,6 +2,8 @@ package com.codility.lesson;
 
 import com.codility.lesson.array.CyclicRotation;
 import com.codility.lesson.array.OddOccurrencesInArray;
+import com.codility.lesson.counting.elements.FrogRiverOne;
+import com.codility.lesson.counting.elements.PermCheck;
 import com.codility.lesson.iterations.BinaryGap;
 import com.codility.lesson.time.complexity.FrogJmp;
 import com.codility.lesson.time.complexity.PermMissingElem;
@@ -62,6 +64,24 @@ public class CodilityMain {
         System.out.println(t.solution(new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10}));
     }
 
+    public void frogRiverOne() {
+        FrogRiverOne f = new FrogRiverOne();
+        System.out.println(f.solution(5, new int[]{1, 3, 1, 4, 2, 3, 4, 5}));
+        System.out.println(f.solution(5, new int[]{1, 3, 1, 4, 2, 3, 4, 5, 5}));
+        System.out.println(f.solution(3, new int[]{1, 2}));
+    }
+
+    public void permCheck() {
+        PermCheck p = new PermCheck();
+        System.out.println(p.solution(new int[]{4, 3, 1}));
+        System.out.println(p.solution(new int[]{4, 1, 3, 2}));
+        System.out.println(p.solution(new int[]{1}));
+        System.out.println(p.solution(new int[]{4}));
+        System.out.println(p.solution(new int[]{4, 3}));
+        System.out.println(p.solution(new int[]{2, 3, 4}));
+        System.out.println(p.solution(new int[]{1, 2, 2}));
+    }
+
     public static void main(String[] args) {
         CodilityMain c = new CodilityMain();
 //        c.binaryGap();
@@ -69,6 +89,8 @@ public class CodilityMain {
 //        c.oddOccurrencesInArray();
 //        c.frogJmp();
 //        c.permMissingElem();
-        c.tapeEquilibrium();
+//        c.tapeEquilibrium();
+//        c.frogRiverOne();
+        c.permCheck();
     }
 }
