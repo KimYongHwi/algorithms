@@ -3,9 +3,9 @@ package com.codility.lesson;
 import com.codility.lesson.array.CyclicRotation;
 import com.codility.lesson.array.OddOccurrencesInArray;
 import com.codility.lesson.iterations.BinaryGap;
-import com.codility.lesson.timecomplexity.FrogJmp;
-import com.codility.lesson.timecomplexity.PermMissingElem;
-import com.codility.lesson.timecomplexity.TapeEquilibrium;
+import com.codility.lesson.time.complexity.FrogJmp;
+import com.codility.lesson.time.complexity.PermMissingElem;
+import com.codility.lesson.time.complexity.TapeEquilibrium;
 
 public class CodilityMain {
     public void binaryGap() {
