@@ -3,6 +3,7 @@ package com.codility.lesson;
 import com.codility.lesson.array.CyclicRotation;
 import com.codility.lesson.array.OddOccurrencesInArray;
 import com.codility.lesson.counting.elements.FrogRiverOne;
+import com.codility.lesson.counting.elements.MaxCounters;
 import com.codility.lesson.counting.elements.PermCheck;
 import com.codility.lesson.iterations.BinaryGap;
 import com.codility.lesson.time.complexity.FrogJmp;
@@ -82,6 +83,14 @@ public class CodilityMain {
         System.out.println(p.solution(new int[]{1, 2, 2}));
     }
 
+    public void maxCounters() {
+        MaxCounters m = new MaxCounters();
+        m.solution(5, new int[]{3, 4, 4});
+        m.solution(5, new int[]{3, 4, 4, 6, 1, 4, 4});
+        m.solution(5, new int[]{3, 4, 4, 6, 1, 4, 4, 6});
+        m.solution(1, new int[]{2, 1});
+    }
+
     public static void main(String[] args) {
         CodilityMain c = new CodilityMain();
 //        c.binaryGap();
@@ -91,6 +100,7 @@ public class CodilityMain {
 //        c.permMissingElem();
 //        c.tapeEquilibrium();
 //        c.frogRiverOne();
-        c.permCheck();
+//        c.permCheck();
+        c.maxCounters();
     }
 }

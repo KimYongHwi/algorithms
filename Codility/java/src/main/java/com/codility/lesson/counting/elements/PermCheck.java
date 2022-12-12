@@ -1,7 +1,6 @@
 package com.codility.lesson.counting.elements;
 
 import java.util.Arrays;
-import java.util.HashSet;
 
 public class PermCheck {
     public int solution(int[] A) {
