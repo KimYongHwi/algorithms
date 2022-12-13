@@ -85,7 +85,7 @@ public class CodilityMain {
 
     public void maxCounters() {
         MaxCounters m = new MaxCounters();
-        m.solution(5, new int[]{3, 4, 4});
+        m.solution(5, new int[]{3, 4, 4, 6});
         m.solution(5, new int[]{3, 4, 4, 6, 1, 4, 4});
         m.solution(5, new int[]{3, 4, 4, 6, 1, 4, 4, 6});
         m.solution(1, new int[]{2, 1});

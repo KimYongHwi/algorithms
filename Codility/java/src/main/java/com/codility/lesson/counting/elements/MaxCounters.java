@@ -58,29 +58,33 @@ each element of array A is an integer within the range [1..N + 1].
 public class MaxCounters {
     public int[] solution(int N, int[] A) {
         int[] answer = new int[N];
-        int max = 0;
+        int currMax = 0;
+        int lastMax = 0;
 
         for (int i = 0; i < A.length; i++) {
             if (A[i] == N + 1) {
-                Arrays.fill(answer, max);
+                lastMax = currMax;
             } else {
-                if (answer[A[i] - 1] == 0) {
-                    answer[A[i] - 1] = 1;
+                if (answer[A[i] - 1] < lastMax) {
+                    answer[A[i] - 1] = lastMax + 1;
                 } else {
                     answer[A[i] - 1] += 1;
                 }
 
-                if (answer[A[i] - 1] > max) {
-                    max = answer[A[i] - 1];
+                if (answer[A[i] - 1] > currMax) {
+                    currMax = answer[A[i] - 1];
                 }
             }
         }
 
         for (int i = 0; i < answer.length; i++) {
+            if (answer[i] < lastMax) {
+                answer[i] = lastMax;
+            }
+
             System.out.print(answer[i]);
         }
         System.out.println();
-
 
         return answer;
     }
