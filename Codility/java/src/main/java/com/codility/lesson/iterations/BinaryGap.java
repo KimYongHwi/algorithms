@@ -54,29 +54,15 @@ public class BinaryGap {
         return maxLength;
     }
 
-//    public int anotherSolution(int N) {
-//        int gap = 0;
-//        String arr [] = Integer.toBinaryString(N).split("");
-//        //N이 529일 때 => 1000010001
-//
-//        List<Integer> numList = new ArrayList<Integer>();
-//        //1의 인덱스값을 담을 INT 배열 선언
-//
-//        for(int i=0;i<arr.length;i++) {
-//            if(arr[i].equals("1")) {
-//                numList.add(i);	//1의 인덱스를 담음
-//                //0,5,9
-//            }
-//        }
-//
-//        //사이 값을 구할 것이므로 size()-1번 FOR문 돌리면 됨
-//        for(int i=0;i<numList.size()-1;i++) {
-//            int count = numList.get(i+1)-(numList.get(i)+1);	// 5-(0+1)=4, 9-(5+1)=3
-//            if(count>gap) {
-//                gap=count;	//큰 값으로 대입
-//            }
-//        }
-//
-//        return gap;
-//    }
+    public static void main(String[] args) {
+        BinaryGap binaryGap = new BinaryGap();
+        System.out.println("==========");
+        System.out.println("solution: " + binaryGap.solution(8));
+        System.out.println("==========");
+        System.out.println("solution: " + binaryGap.solution(529));
+        System.out.println("==========");
+        System.out.println("solution: " + binaryGap.solution(1041));
+        System.out.println("==========");
+        System.out.println("solution: " + binaryGap.solution(561892));
+    }
 }

@@ -2,7 +2,6 @@ package com.codility.lesson.time.complexity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class TapeEquilibrium {
     public int solution(int[] A) {
@@ -19,5 +18,15 @@ public class TapeEquilibrium {
         }
 
         return sumList.stream().min((n1, n2) -> n1.compareTo(n2)).get();
+    }
+
+    public static void main(String[] args) {
+        TapeEquilibrium t = new TapeEquilibrium();
+        System.out.println(t.solution(new int[]{1, 2}));
+        System.out.println(t.solution(new int[]{2, 3}));
+        System.out.println(t.solution(new int[]{2, 3, 9}));
+        System.out.println(t.solution(new int[]{3, 1, 2, 4, 3}));
+        System.out.println(t.solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+        System.out.println(t.solution(new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10}));
     }
 }

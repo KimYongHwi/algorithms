@@ -24,4 +24,9 @@ public class OddOccurrencesInArray {
 
         return map.keySet().stream().findFirst().get();
     }
+
+    public static void main(String[] args) {
+        OddOccurrencesInArray o = new OddOccurrencesInArray();
+        o.solution(new int[]{9, 3, 9, 3, 9, 7, 9});
+    }
 }

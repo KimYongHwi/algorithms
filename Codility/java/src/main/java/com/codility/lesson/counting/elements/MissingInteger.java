@@ -38,4 +38,25 @@ public class MissingInteger {
 
         return answer;
     }
+
+    public static void main(String[] args) {
+        MissingInteger m = new MissingInteger();
+        // example
+        System.out.println(m.solution(new int[]{1, 3, 6, 4, 1, 2}));
+        System.out.println(m.solution(new int[]{1, 2, 3}));
+        System.out.println(m.solution(new int[]{-1, -3}));
+
+        // extreme_single
+        System.out.println(m.solution(new int[]{2}));
+
+        // simple
+        System.out.println(m.solution(new int[]{-1, -3, 1}));
+
+        // extreme_min_max_value
+        System.out.println(m.solution(new int[]{-100000}));
+        System.out.println(m.solution(new int[]{100000}));
+
+        // negative_only
+        System.out.println(m.solution(new int[]{-1, -3, -4}));
+    }
 }

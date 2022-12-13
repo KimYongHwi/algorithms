@@ -70,6 +70,16 @@ public class CyclicRotation {
         return answer;
     }
 
+    public static void main(String[] args) {
+        CyclicRotation cyclicRotation = new CyclicRotation();
+        cyclicRotation.solution(new int[]{3, 8, 9, 7, 6}, 3); // K > N
+        cyclicRotation.solution(new int[]{3, 8, 9, 7, 6}, 12); // K > N
+        cyclicRotation.solution(new int[]{3, 8, 9, 7, 6, 5}, 3);
+        cyclicRotation.solution(new int[]{1, 2, 3, 4}, 4); // K == N
+        cyclicRotation.solution(new int[]{1}, 4);
+        cyclicRotation.solution(new int[]{1, 2, 3, 4, 5, 6, 7}, 2);
+    }
+
 //    public int[] solution(int[] A, int K) {
 //        int[] answer = new int[A.length];
 //

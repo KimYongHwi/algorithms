@@ -1,7 +1,5 @@
 package com.codility.lesson.counting.elements;
 
-import java.util.Arrays;
-
 /*
 You are given N counters, initially set to 0, and you have two possible operations on them:
 
@@ -87,5 +85,13 @@ public class MaxCounters {
         System.out.println();
 
         return answer;
+    }
+
+    public static void main(String[] args) {
+        MaxCounters m = new MaxCounters();
+        m.solution(5, new int[]{3, 4, 4, 6});
+        m.solution(5, new int[]{3, 4, 4, 6, 1, 4, 4});
+        m.solution(5, new int[]{3, 4, 4, 6, 1, 4, 4, 6});
+        m.solution(1, new int[]{2, 1});
     }
 }

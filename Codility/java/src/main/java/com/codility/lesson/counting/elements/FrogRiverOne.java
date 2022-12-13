@@ -1,9 +1,6 @@
 package com.codility.lesson.counting.elements;
 
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /*
 A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river (position 0) and wants to get to the opposite bank (position X+1). Leaves fall from a tree onto the surface of the river.
@@ -56,5 +53,12 @@ public class FrogRiverOne {
         }
 
         return -1;
+    }
+
+    public static void main(String[] args) {
+        FrogRiverOne f = new FrogRiverOne();
+        System.out.println(f.solution(5, new int[]{1, 3, 1, 4, 2, 3, 4, 5}));
+        System.out.println(f.solution(5, new int[]{1, 3, 1, 4, 2, 3, 4, 5, 5}));
+        System.out.println(f.solution(3, new int[]{1, 2}));
     }
 }
