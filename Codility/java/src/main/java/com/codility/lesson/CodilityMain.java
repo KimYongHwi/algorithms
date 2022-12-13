@@ -4,6 +4,7 @@ import com.codility.lesson.array.CyclicRotation;
 import com.codility.lesson.array.OddOccurrencesInArray;
 import com.codility.lesson.counting.elements.FrogRiverOne;
 import com.codility.lesson.counting.elements.MaxCounters;
+import com.codility.lesson.counting.elements.MissingInteger;
 import com.codility.lesson.counting.elements.PermCheck;
 import com.codility.lesson.iterations.BinaryGap;
 import com.codility.lesson.time.complexity.FrogJmp;
@@ -91,6 +92,27 @@ public class CodilityMain {
         m.solution(1, new int[]{2, 1});
     }
 
+    public void missingInteger() {
+        MissingInteger m = new MissingInteger();
+        // example
+        System.out.println(m.solution(new int[]{1, 3, 6, 4, 1, 2}));
+        System.out.println(m.solution(new int[]{1, 2, 3}));
+        System.out.println(m.solution(new int[]{-1, -3}));
+
+        // extreme_single
+        System.out.println(m.solution(new int[]{2}));
+
+        // simple
+        System.out.println(m.solution(new int[]{-1, -3, 1}));
+
+        // extreme_min_max_value
+        System.out.println(m.solution(new int[]{-100000}));
+        System.out.println(m.solution(new int[]{100000}));
+
+        // negative_only
+        System.out.println(m.solution(new int[]{-1, -3, -4}));
+    }
+
     public static void main(String[] args) {
         CodilityMain c = new CodilityMain();
 //        c.binaryGap();
@@ -101,6 +123,7 @@ public class CodilityMain {
 //        c.tapeEquilibrium();
 //        c.frogRiverOne();
 //        c.permCheck();
-        c.maxCounters();
+//        c.maxCounters();
+        c.missingInteger();
     }
 }
