@@ -46,7 +46,7 @@ each element of array A is an integer that can have one of the following values:
 public class PassingCars {
     public int solution(int[] A) {
         ArrayList<Integer> zeroIndex = new ArrayList<>();
-        int answer = 0;
+        Long answer = 0L;
 
         for (int i = 0; i < A.length; i++) {
             if (A[i] == 0) {
@@ -60,7 +60,7 @@ public class PassingCars {
             return -1;
         }
 
-        return answer;
+        return answer.intValue();
     }
 
     public static void main(String args[]) {
@@ -74,5 +74,16 @@ public class PassingCars {
         System.out.println("double3: " + p.solution(new int[]{1, 0}));
         System.out.println("double4: " + p.solution(new int[]{0, 1}));
         System.out.println("small_random: " + p.solution(new int[]{0, 1, 0, 1, 1, 0, 1}));
+
+        ArrayList<Integer> test1 = new ArrayList<>();
+        ArrayList<Integer> test2 = new ArrayList<>();
+        for(int i = 0; i < 50000; i++) {
+            test1.add(0);
+            test2.add(1);
+        }
+        test1.addAll(test2);
+        int[] arr = test1.stream().mapToInt(i -> i).toArray();
+
+        System.out.println("large_big_answer: " + p.solution(arr));
     }
 }
