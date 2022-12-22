@@ -1,7 +1,6 @@
 package com.codility.lesson.prefix.sums;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /*
 A non-empty array A consisting of N integers is given. The consecutive elements of array A represent consecutive cars on a road.
