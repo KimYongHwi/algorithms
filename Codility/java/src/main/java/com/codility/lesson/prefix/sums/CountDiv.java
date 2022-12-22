@@ -27,6 +27,7 @@ public class CountDiv {
         int end = B;
         int answer = 0;
 
+        // K로 나눴을 때 나머지가 0인 start index를 찾는다.
         while (start <= end) {
             if (start % K == 0) {
                 answer++;
@@ -36,6 +37,7 @@ public class CountDiv {
             }
         }
 
+        // start에서 B까지의 개수를 K로 나눈 몫을 더한다.
         answer += (B - start) / K;
 
         return answer;
