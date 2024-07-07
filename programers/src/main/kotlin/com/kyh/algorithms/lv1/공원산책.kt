@@ -1,4 +1,4 @@
-package com.kyh.algorithms.array
+package com.kyh.algorithms.lv1
 
 class 공원산책 {
     fun solution(park: Array<String>, routes: Array<String>): IntArray {

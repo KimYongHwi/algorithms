@@ -1,4 +1,4 @@
-package com.kyh.algorithms.array
+package com.kyh.algorithms.lv1
 
 /*
 사진들을 보며 추억에 젖어 있던 루는 사진별로 추억 점수를 매길려고 합니다. 사진 속에 나오는 인물의 그리움 점수를 모두 합산한 값이 해당 사진의 추억 점수가 됩니다.

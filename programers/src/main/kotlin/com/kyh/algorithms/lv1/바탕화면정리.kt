@@ -1,4 +1,4 @@
-package com.kyh.algorithms.array
+package com.kyh.algorithms.lv1
 
 import kotlin.math.max
 import kotlin.math.min

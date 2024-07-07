@@ -1,4 +1,4 @@
-package com.kyh.algorithms.array
+package com.kyh.algorithms.lv1
 
 
 /*
