@@ -5,6 +5,7 @@ class 덧칠하기 {
         var answer = 0
         var idx = 0
 
+        // 다음 section 위치를 구한다.
         while (true) {
             if (idx > section.size - 1) break;
             val range = m + section[idx] - 1
