@@ -25,12 +25,15 @@ class 둘만의암호 {
     }
 
     fun optimalSolution(s: String, skip: String, index: Int): String {
-        var answer: String = ""
-        val skipped = skip.map { it.toChar() }
+        var answer = ""
+        val skipped = skip.map { it }
         val alphabet = ('a'..'z').filter { it !in skipped }
 
         s.forEach {
+            // skip문자를 제외한 알파벳 목록과 index, 나머지 연산자를 이용해 다음 위치의 알파벳을 구한다.
             val i = (alphabet.indexOf(it) + index) % alphabet.size
+
+            println("indexOf: ${alphabet.indexOf(it)}, index: $index, alphabet size: ${alphabet.size}, i: $i")
             answer += alphabet[i]
         }
         return answer
@@ -59,6 +62,6 @@ fun main() {
     val index = 20
 
     val problem = 둘만의암호()
-    val answer = problem.solution(s, skip, index)
+    val answer = problem.optimalSolution(s, skip, index)
     println(answer)
 }
